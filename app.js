@@ -11,8 +11,9 @@ app.use(express.static(__dirname + "/public"));
 app.get("/", (req, res) => {
     res.render("index");
 });
-
-
+app.get("/options", (req, res) => {
+    res.render("options");
+});
 
 
 app.listen(port, () =>{
